@@ -1,5 +1,80 @@
 [
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "stdimage.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "stdimage.models",
+        "description": "stdimage.models",
+        "detail": "stdimage.models",
+        "documentation": {}
+    },
+    {
+        "label": "StdImageField",
+        "importPath": "stdimage.models",
+        "description": "stdimage.models",
+        "isExtraImport": true,
+        "detail": "stdimage.models",
+        "documentation": {}
+    },
+    {
+        "label": "core.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "core.models",
+        "description": "core.models",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -24,19 +99,12 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "uuid",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "StdImageField",
-        "importPath": "stdimage.models",
-        "description": "stdimage.models",
-        "isExtraImport": true,
-        "detail": "stdimage.models",
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
         "documentation": {}
     },
     {
@@ -154,6 +222,60 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0001_initial",
+        "description": "core.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Cargo',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('criados', models.DateField(auto_now_add=True, verbose_name='Criação')),",
+        "detail": "core.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0002_alter_funcionario_imagem",
+        "description": "core.migrations.0002_alter_funcionario_imagem",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='funcionario',\n            name='imagem',\n            field=stdimage.models.StdImageField(force_min_size=False, upload_to=core.models.get_file_path, variations={'thumbnail': {'crop': True, 'heigth': 480, 'width': 480}}, verbose_name='Imagem'),\n        ),",
+        "detail": "core.migrations.0002_alter_funcionario_imagem",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0003_alter_funcionario_imagem",
+        "description": "core.migrations.0003_alter_funcionario_imagem",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0002_alter_funcionario_imagem'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='funcionario',\n            name='imagem',\n            field=stdimage.models.StdImageField(force_min_size=False, upload_to=core.models.get_file_path, variations={}, verbose_name='Imagem'),\n        ),",
+        "detail": "core.migrations.0003_alter_funcionario_imagem",
+        "documentation": {}
+    },
+    {
+        "label": "CargoAdmin",
+        "kind": 6,
+        "importPath": "core.admin",
+        "description": "core.admin",
+        "peekOfCode": "class CargoAdmin(admin.ModelAdmin):\n    list_display = ('cargo', 'ativo', 'modificado')\n@admin.register(Servico)\nclass ServicoAdmin(admin.ModelAdmin):\n    list_display = ('servico', 'icone', 'ativo', 'modificado')\n@admin.register(Funcionario)\nclass FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')",
+        "detail": "core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ServicoAdmin",
+        "kind": 6,
+        "importPath": "core.admin",
+        "description": "core.admin",
+        "peekOfCode": "class ServicoAdmin(admin.ModelAdmin):\n    list_display = ('servico', 'icone', 'ativo', 'modificado')\n@admin.register(Funcionario)\nclass FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')",
+        "detail": "core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FuncionarioAdmin",
+        "kind": 6,
+        "importPath": "core.admin",
+        "description": "core.admin",
+        "peekOfCode": "class FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')",
+        "detail": "core.admin",
+        "documentation": {}
+    },
+    {
         "label": "CoreConfig",
         "kind": 6,
         "importPath": "core.apps",
@@ -177,6 +299,33 @@
         "importPath": "core.models",
         "description": "core.models",
         "peekOfCode": "class Servico(Base):\n    ICONE_CHOICES = (\n        ('lni-cog', 'Engrenagem'),\n        ('lni-status-up', 'Gráfico'),\n        ('lni-users', 'Usuários'),\n        ('lni-layers', 'Design'),\n        ('lni-mobile', 'Mobile'),\n        ('lni-rocket', 'Foguete'),\n    )\n    servico = models.CharField('serviço', max_length=100)",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Cargo",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class Cargo(Base):\n    cargo = models.CharField('Cargo', max_length=100)\n    class Meta:\n        verbose_name = 'Cargo'\n        verbose_name_plural = 'Cargos'\n    def __str__(self):\n        return self.cargo\nclass Funcionario(Base):\n    nome = models.CharField('Nome', max_length=100)\n    cargo = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Funcionario",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class Funcionario(Base):\n    nome = models.CharField('Nome', max_length=100)\n    cargo = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)\n    bio = models.TextField('Bio', max_length=200)\n    imagem = StdImageField('Imagem', upload_to=get_file_path)\n    facebook = models.CharField('Facebook', max_length=100, default='#')\n    twitter = models.CharField('Twitter', max_length=100, default='#')\n    instagram = models.CharField('Instagram', max_length=100, default='#')\n    class Meta:\n        verbose_name = 'Funcionário'",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_path",
+        "kind": 2,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "def get_file_path(_instance, filename):\n    ext = filename.split('.')[-1]\n    filename = f'{uuid.uuid4()}.{ext}'\n    return filename\nclass Base(models.Model):\n    criados = models.DateField('Criação', auto_now_add=True)\n    modificado = models.DateField('Atualização', auto_now=True)\n    ativo = models.BooleanField('Ativo', default=True)\n    class Meta:\n        abstract = True",
         "detail": "core.models",
         "documentation": {}
     },
@@ -284,7 +433,16 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'fusion.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\n# DATABASES = {\n#     'default': {\n#         'ENGINE': 'django.db.backends.postgresql',\n#         'NAME': 'fusion',\n#         'USER': 'postgres',\n#         'PASSWORD': 'wilian',\n#         'HOST': '127.0.0.1',",
+        "peekOfCode": "WSGI_APPLICATION = 'fusion.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'fusion',\n        'USER': 'root',\n        'PASSWORD': 'wilian',\n        'HOST': 'localhost',",
+        "detail": "fusion.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "fusion.settings",
+        "description": "fusion.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.mysql',\n        'NAME': 'fusion',\n        'USER': 'root',\n        'PASSWORD': 'wilian',\n        'HOST': 'localhost',\n        'PORT': '3306',\n    }\n}",
         "detail": "fusion.settings",
         "documentation": {}
     },
