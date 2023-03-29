@@ -32,6 +32,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -83,6 +99,14 @@
         "documentation": {}
     },
     {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -96,6 +120,22 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "EmailMessage",
+        "importPath": "django.core.mail.message",
+        "description": "django.core.mail.message",
+        "isExtraImport": true,
+        "detail": "django.core.mail.message",
         "documentation": {}
     },
     {
@@ -124,6 +164,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -140,7 +188,7 @@
         "documentation": {}
     },
     {
-        "label": "TemplateView",
+        "label": "FormView",
         "importPath": "django.views.generic",
         "description": "django.views.generic",
         "isExtraImport": true,
@@ -249,11 +297,20 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "core.migrations.0004_recurso_alter_funcionario_imagem_alter_servico_icone_and_more",
+        "description": "core.migrations.0004_recurso_alter_funcionario_imagem_alter_servico_icone_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0003_alter_funcionario_imagem'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Recurso',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('criados', models.DateField(auto_now_add=True, verbose_name='Criação')),",
+        "detail": "core.migrations.0004_recurso_alter_funcionario_imagem_alter_servico_icone_and_more",
+        "documentation": {}
+    },
+    {
         "label": "CargoAdmin",
         "kind": 6,
         "importPath": "core.admin",
         "description": "core.admin",
-        "peekOfCode": "class CargoAdmin(admin.ModelAdmin):\n    list_display = ('cargo', 'ativo', 'modificado')\n@admin.register(Servico)\nclass ServicoAdmin(admin.ModelAdmin):\n    list_display = ('servico', 'icone', 'ativo', 'modificado')\n@admin.register(Funcionario)\nclass FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')",
+        "peekOfCode": "class CargoAdmin(admin.ModelAdmin):\n    list_display = ('cargo', 'ativo', 'modificado')\n@admin.register(Servico)\nclass ServicoAdmin(admin.ModelAdmin):\n    list_display = ('servico', 'icone', 'ativo', 'modificado')\n@admin.register(Funcionario)\nclass FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')\n@admin.register(Recurso)\nclass RecursoAdmin(admin.ModelAdmin):",
         "detail": "core.admin",
         "documentation": {}
     },
@@ -262,7 +319,7 @@
         "kind": 6,
         "importPath": "core.admin",
         "description": "core.admin",
-        "peekOfCode": "class ServicoAdmin(admin.ModelAdmin):\n    list_display = ('servico', 'icone', 'ativo', 'modificado')\n@admin.register(Funcionario)\nclass FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')",
+        "peekOfCode": "class ServicoAdmin(admin.ModelAdmin):\n    list_display = ('servico', 'icone', 'ativo', 'modificado')\n@admin.register(Funcionario)\nclass FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')\n@admin.register(Recurso)\nclass RecursoAdmin(admin.ModelAdmin):\n    list_display = ('recurso', 'icone', 'modificado')",
         "detail": "core.admin",
         "documentation": {}
     },
@@ -271,7 +328,16 @@
         "kind": 6,
         "importPath": "core.admin",
         "description": "core.admin",
-        "peekOfCode": "class FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')",
+        "peekOfCode": "class FuncionarioAdmin(admin.ModelAdmin):\n    list_display = ('nome', 'cargo', 'ativo', 'modificado')\n@admin.register(Recurso)\nclass RecursoAdmin(admin.ModelAdmin):\n    list_display = ('recurso', 'icone', 'modificado')",
+        "detail": "core.admin",
+        "documentation": {}
+    },
+    {
+        "label": "RecursoAdmin",
+        "kind": 6,
+        "importPath": "core.admin",
+        "description": "core.admin",
+        "peekOfCode": "class RecursoAdmin(admin.ModelAdmin):\n    list_display = ('recurso', 'icone', 'modificado')",
         "detail": "core.admin",
         "documentation": {}
     },
@@ -285,11 +351,20 @@
         "documentation": {}
     },
     {
+        "label": "ContatoForm",
+        "kind": 6,
+        "importPath": "core.forms",
+        "description": "core.forms",
+        "peekOfCode": "class ContatoForm(forms.Form):\n    nome = forms.CharField(label='Nome', max_length=100)\n    email = forms.EmailField(label='E-mail', max_length=100)\n    assunto = forms.CharField(label='Assunto', max_length=100)\n    mensagem = forms.CharField(label='Mensagem', widget=forms.Textarea())\n    def send_mail(self):\n        nome = self.cleaned_data['nome']\n        email = self.cleaned_data['email']\n        assunto = self.cleaned_data['assunto']\n        mensagem = self.cleaned_data['mensagem']",
+        "detail": "core.forms",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "kind": 6,
         "importPath": "core.models",
         "description": "core.models",
-        "peekOfCode": "class Base(models.Model):\n    criados = models.DateField('Criação', auto_now_add=True)\n    modificado = models.DateField('Atualização', auto_now=True)\n    ativo = models.BooleanField('Ativo', default=True)\n    class Meta:\n        abstract = True\nclass Servico(Base):\n    ICONE_CHOICES = (\n        ('lni-cog', 'Engrenagem'),\n        ('lni-status-up', 'Gráfico'),",
+        "peekOfCode": "class Base(models.Model):\n    criados = models.DateField('Criação', auto_now_add=True)\n    modificado = models.DateField('Atualização', auto_now=True)\n    ativo = models.BooleanField('Ativo', default=True)\n    class Meta:\n        abstract = True\nclass Servico(Base):\n    ICONE_CHOICES = (\n        ('lni-cog', 'Engrenagem'),\n        ('lni-stats-up', 'Gráfico'),",
         "detail": "core.models",
         "documentation": {}
     },
@@ -298,7 +373,7 @@
         "kind": 6,
         "importPath": "core.models",
         "description": "core.models",
-        "peekOfCode": "class Servico(Base):\n    ICONE_CHOICES = (\n        ('lni-cog', 'Engrenagem'),\n        ('lni-status-up', 'Gráfico'),\n        ('lni-users', 'Usuários'),\n        ('lni-layers', 'Design'),\n        ('lni-mobile', 'Mobile'),\n        ('lni-rocket', 'Foguete'),\n    )\n    servico = models.CharField('serviço', max_length=100)",
+        "peekOfCode": "class Servico(Base):\n    ICONE_CHOICES = (\n        ('lni-cog', 'Engrenagem'),\n        ('lni-stats-up', 'Gráfico'),\n        ('lni-users', 'Usuários'),\n        ('lni-layers', 'Design'),\n        ('lni-mobile', 'Mobile'),\n        ('lni-rocket', 'Foguete'),\n    )\n    servico = models.CharField('Serviço', max_length=100)",
         "detail": "core.models",
         "documentation": {}
     },
@@ -316,7 +391,16 @@
         "kind": 6,
         "importPath": "core.models",
         "description": "core.models",
-        "peekOfCode": "class Funcionario(Base):\n    nome = models.CharField('Nome', max_length=100)\n    cargo = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)\n    bio = models.TextField('Bio', max_length=200)\n    imagem = StdImageField('Imagem', upload_to=get_file_path)\n    facebook = models.CharField('Facebook', max_length=100, default='#')\n    twitter = models.CharField('Twitter', max_length=100, default='#')\n    instagram = models.CharField('Instagram', max_length=100, default='#')\n    class Meta:\n        verbose_name = 'Funcionário'",
+        "peekOfCode": "class Funcionario(Base):\n    nome = models.CharField('Nome', max_length=100)\n    cargo = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)\n    bio = models.TextField('Bio', max_length=200)\n    imagem = StdImageField('Imagem', upload_to=get_file_path, variations={'thumb': (480, 480)})\n    facebook = models.CharField('Facebook', max_length=100, default='#')\n    twitter = models.CharField('Twitter', max_length=100, default='#')\n    instagram = models.CharField('Instagram', max_length=100, default='#')\n    class Meta:\n        verbose_name = 'Funcionário'",
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Recurso",
+        "kind": 6,
+        "importPath": "core.models",
+        "description": "core.models",
+        "peekOfCode": "class Recurso(Base):\n    recurso = models.CharField('Recurso', max_length=100)\n    descricao = models.TextField('Descrição', max_length=200)\n    ICONE_CHOICES = (\n        ('lni-rocket', 'Torpedo'),\n        ('lni-laptop-phone', 'Laptop'),\n        ('lni-cog', 'Engrenagem'),\n        ('lni-leaf', 'Folha'),\n        ('lni-layers', 'Camadas'),\n    )",
         "detail": "core.models",
         "documentation": {}
     },
@@ -343,7 +427,7 @@
         "kind": 6,
         "importPath": "core.views",
         "description": "core.views",
-        "peekOfCode": "class IndexView(TemplateView):\n    template_name = 'index.html'",
+        "peekOfCode": "class IndexView(FormView):\n    template_name = 'index.html'\n    form_class = ContatoForm\n    success_url = reverse_lazy('index')\n    def get_context_data(self, **kwargs):\n        context = super(IndexView, self).get_context_data(**kwargs)\n        context['servico'] = Servico.objects.order_by('?').all()\n        context['funcionario'] = Funcionario.objects.order_by('?').all()\n        context['recurso'] = Recurso.objects.order_by('?').all()\n        return context",
         "detail": "core.views",
         "documentation": {}
     },
@@ -496,7 +580,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nMEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_URL = 'static/'\nMEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -505,7 +589,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "MEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "MEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -514,7 +598,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -523,7 +607,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "MEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -532,7 +616,16 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'",
+        "detail": "fusion.settings",
+        "documentation": {}
+    },
+    {
+        "label": "EMAIL_BACKEND",
+        "kind": 5,
+        "importPath": "fusion.settings",
+        "description": "fusion.settings",
+        "peekOfCode": "EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'",
         "detail": "fusion.settings",
         "documentation": {}
     },

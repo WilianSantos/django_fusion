@@ -23,13 +23,13 @@ class Base(models.Model):
 class Servico(Base):
     ICONE_CHOICES = (
         ('lni-cog', 'Engrenagem'),
-        ('lni-status-up', 'Gráfico'),
+        ('lni-stats-up', 'Gráfico'),
         ('lni-users', 'Usuários'),
         ('lni-layers', 'Design'),
         ('lni-mobile', 'Mobile'),
         ('lni-rocket', 'Foguete'),
     )
-    servico = models.CharField('serviço', max_length=100)
+    servico = models.CharField('Serviço', max_length=100)
     descricao = models.TextField('Descrição', max_length=200)
     icone = models.CharField('Icone', max_length=13, choices=ICONE_CHOICES)
     
@@ -58,7 +58,7 @@ class Funcionario(Base):
     nome = models.CharField('Nome', max_length=100)
     cargo = models.ForeignKey('core.Cargo', verbose_name='Cargo', on_delete=models.CASCADE)
     bio = models.TextField('Bio', max_length=200)
-    imagem = StdImageField('Imagem', upload_to=get_file_path)
+    imagem = StdImageField('Imagem', upload_to=get_file_path, variations={'thumb': (480, 480)})
     facebook = models.CharField('Facebook', max_length=100, default='#')
     twitter = models.CharField('Twitter', max_length=100, default='#')
     instagram = models.CharField('Instagram', max_length=100, default='#')
@@ -70,4 +70,24 @@ class Funcionario(Base):
         
     def __str__(self):
         return self.nome
+    
+    
+class Recurso(Base):
+    recurso = models.CharField('Recurso', max_length=100)
+    descricao = models.TextField('Descrição', max_length=200)
+    ICONE_CHOICES = (
+        ('lni-rocket', 'Torpedo'),
+        ('lni-laptop-phone', 'Laptop'),
+        ('lni-cog', 'Engrenagem'),
+        ('lni-leaf', 'Folha'),
+        ('lni-layers', 'Camadas'),
+    )
+    icone = models.CharField('Icones', max_length=17, choices=ICONE_CHOICES)
+    
+    class Meta:
+        verbose_name = 'Recurso'
+        verbose_name_plural = 'Recursos'
+        
+        def __str__(self):
+            return self.recurso
     
