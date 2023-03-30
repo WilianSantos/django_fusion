@@ -91,6 +91,119 @@
         "documentation": {}
     },
     {
+        "label": "get_file_path",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "Servico",
+        "importPath": "core.models",
+        "description": "core.models",
+        "isExtraImport": true,
+        "detail": "core.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "ContatoForm",
+        "importPath": "core.forms",
+        "description": "core.forms",
+        "isExtraImport": true,
+        "detail": "core.forms",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "mommy",
+        "importPath": "model_mommy",
+        "description": "model_mommy",
+        "isExtraImport": true,
+        "detail": "model_mommy",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -136,55 +249,6 @@
         "description": "django.core.mail.message",
         "isExtraImport": true,
         "detail": "django.core.mail.message",
-        "documentation": {}
-    },
-    {
-        "label": "uuid",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "uuid",
-        "description": "uuid",
-        "detail": "uuid",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "reverse_lazy",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -319,6 +383,51 @@
         "description": "core.migrations.0004_recurso_alter_funcionario_imagem_alter_servico_icone_and_more",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('core', '0003_alter_funcionario_imagem'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Recurso',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('criados', models.DateField(auto_now_add=True, verbose_name='Criação')),",
         "detail": "core.migrations.0004_recurso_alter_funcionario_imagem_alter_servico_icone_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "ContatoFormTestCase",
+        "kind": 6,
+        "importPath": "core.tests.tests_forms",
+        "description": "core.tests.tests_forms",
+        "peekOfCode": "class ContatoFormTestCase(TestCase):\n    def setUp(self):\n        self.nome = 'Teste'\n        self.email = 'teste@gmail.com'\n        self.assunto = 'Testando'\n        self.mensagem = 'Testando o formulário'\n        self.dados = {\n            'nome': self.nome,\n            'email': self.email,\n            'assunto': self.assunto,",
+        "detail": "core.tests.tests_forms",
+        "documentation": {}
+    },
+    {
+        "label": "GetFilePathTestCase",
+        "kind": 6,
+        "importPath": "core.tests.tests_models",
+        "description": "core.tests.tests_models",
+        "peekOfCode": "class GetFilePathTestCase(TestCase):\n    def setUp(self):\n        self.filiname = f'{uuid.uuid4()}.png'\n    def test_get_file_path(self):\n        arquivo = get_file_path(None, 'teste.png')\n        self.assertTrue(len(arquivo), len(self.filiname))\n# class ServicoTestCase(TestCase):\n#     def setUp(self):\n#         self.servico = mommy.make('Servico')\n#     def test_str(self):",
+        "detail": "core.tests.tests_models",
+        "documentation": {}
+    },
+    {
+        "label": "CargoTestCase",
+        "kind": 6,
+        "importPath": "core.tests.tests_models",
+        "description": "core.tests.tests_models",
+        "peekOfCode": "class CargoTestCase(TestCase):\n    def setUp(self):\n        self.cargo = mommy.make('Cargo')\n    def test_str(self):\n        self.assertEquals(str(self.cargo), self.cargo.cargo)\nclass FuncionarioTestCase(TestCase):\n    def setUp(self):\n        self.funcionario = mommy.make('Funcionario')\n    def test_str(self):\n        self.assertEquals(str(self.funcionario), self.funcionario.nome)",
+        "detail": "core.tests.tests_models",
+        "documentation": {}
+    },
+    {
+        "label": "FuncionarioTestCase",
+        "kind": 6,
+        "importPath": "core.tests.tests_models",
+        "description": "core.tests.tests_models",
+        "peekOfCode": "class FuncionarioTestCase(TestCase):\n    def setUp(self):\n        self.funcionario = mommy.make('Funcionario')\n    def test_str(self):\n        self.assertEquals(str(self.funcionario), self.funcionario.nome)\n# class RecursoTestCase(TestCase):\n#     def setUp(self):\n#         self.recurso = mommy.make('Recurso')\n#     def test_str(self):\n#         self.assertEquals(str(self.recurso), self.recurso.recurso)",
+        "detail": "core.tests.tests_models",
+        "documentation": {}
+    },
+    {
+        "label": "IndexViewTestCase",
+        "kind": 6,
+        "importPath": "core.tests.tests_views",
+        "description": "core.tests.tests_views",
+        "peekOfCode": "class IndexViewTestCase(TestCase):\n    def setUp(self):\n        self.dados = {\n            'nome': 'Teste',\n            'email': 'teste@gmail.com',\n            'assunto': 'Testando',\n            'mensagem': 'Fazendo um teste'\n        }\n        self.cliente = Client()\n    def test_form_valid(self):",
+        "detail": "core.tests.tests_views",
         "documentation": {}
     },
     {

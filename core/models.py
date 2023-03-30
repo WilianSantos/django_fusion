@@ -39,7 +39,7 @@ class Servico(Base):
         verbose_name_plural = 'Serviços'
         
         def __str__(self):
-            return self.Servico
+            return self.servico
         
         
 class Cargo(Base):
