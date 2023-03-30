@@ -470,7 +470,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure--y*=t%3#c%&1zvlx+sx9gkxa066k0+el9f2#+f@8+e_zx%j$3^'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure--y*=t%3#c%&1zvlx+sx9gkxa066k0+el9f2#+f@8+e_zx%j$3^'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'core',\n    'django_adminlte',\n    'django_adminlte_theme',\n    'django.contrib.admin',",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -479,7 +479,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'core',\n    'django_adminlte',\n    'django_adminlte_theme',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -488,7 +488,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',",
+        "peekOfCode": "ALLOWED_HOSTS = ['*']\n# Application definition\nINSTALLED_APPS = [\n    'core',\n    'django_adminlte',\n    'django_adminlte_theme',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -497,7 +497,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'core',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'core',\n    'django_adminlte',\n    'django_adminlte_theme',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -560,7 +560,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'pt-br'\nTIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')",
+        "peekOfCode": "LANGUAGE_CODE = 'pt-br'\nTIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -569,7 +569,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "TIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type",
+        "peekOfCode": "TIME_ZONE = 'America/Sao_Paulo'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -578,7 +578,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -587,7 +587,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\nMEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -596,7 +596,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "STATIC_URL = 'static/'\nMEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'\nLOGOUT_REDIRECT_URL = 'index'",
+        "peekOfCode": "STATIC_URL = '/static/'\nMEDIA_URL = '/media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'\nLOGOUT_REDIRECT_URL = 'index'",
         "detail": "fusion.settings",
         "documentation": {}
     },
@@ -605,7 +605,7 @@
         "kind": 5,
         "importPath": "fusion.settings",
         "description": "fusion.settings",
-        "peekOfCode": "MEDIA_URL = 'media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'\nLOGOUT_REDIRECT_URL = 'index'",
+        "peekOfCode": "MEDIA_URL = '/media/'\nSTATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')\nMEDIA_ROOT = Path.joinpath(BASE_DIR, 'media')\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Email teste console\nEMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'\nLOGOUT_REDIRECT_URL = 'index'",
         "detail": "fusion.settings",
         "documentation": {}
     },
