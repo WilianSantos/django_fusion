@@ -133,3 +133,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Email teste console
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+LOGOUT_REDIRECT_URL = 'index'

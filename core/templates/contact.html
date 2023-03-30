@@ -8,13 +8,13 @@
       <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
         <div class="col-lg-7 col-md-12 col-sm-12">
           <div class="contact-block">
-            <form id="contactForm">
+            <form id="contato" method="post" action="{% url 'index' %}">
               {% csrf_token %}
 
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Por favor digite seu nome">
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required>
                     <div class="help-block with-errors"></div>
                   </div>                                 
                 </div>
